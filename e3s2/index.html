@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PB-N9-E3S2 · Taller de ramas · Playbook Rama</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-tipo="rama" data-expedicion="3" data-etapa="secundaria">
+
+<header class="app-header">
+  <div class="bar">
+    <div class="brand">
+      <div class="chips">
+        <span class="chip exp">Expedición 3</span>
+        <span class="chip">Sprint 2</span>
+        <span class="chip tipo">Rama · Taller</span>
+      </div>
+      <h1>Taller de ramas</h1>
+      <p class="gancho">Profundiza tu rama: del sensor a la decisión en tiempo real</p>
+      <span class="sprint-id">PB-N9-E3S2 · Nivel 9 · 3º de Secundaria · Sensores PlanetX (BME280) + IoTbit + MicroPython + ThingSpeak</span>
+    </div>
+    <div class="header-toggles">
+      <div class="timer-global">
+        <span id="global-timer" data-duracion="2400">40:00</span>
+        <button id="global-start-stop">Iniciar</button>
+        <button id="global-reset">Reiniciar</button>
+      </div>
+      <div class="toggle">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Reloj</span>
+        <label class="switch"><input type="checkbox" id="toggle-reloj"><span class="slider"></span></label>
+      </div>
+      <div class="toggle">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <label class="switch"><input type="checkbox" id="toggle-theme"><span class="slider"></span></label>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="main-shell">
+  <nav class="trail" aria-label="Ruta del sprint">
+    <h2>La ruta</h2>
+    <ol>
+      <li><a class="trail-link" href="#b0"><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h6"/></svg></span>Comando Central</a></li>
+      <li><a class="trail-link" href="#b1"><span class="dot">1</span>Encendido<span class="t-min">≈5'</span></a></li>
+      <li><a class="trail-link" href="#b2"><span class="dot">2</span>Demo<span class="t-min">≈5'</span></a></li>
+      <li><a class="trail-link" href="#b3"><span class="dot">3</span>Manos a la obra<span class="t-min">≈22'</span></a></li>
+      <li class="trail-camp"><span class="dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 21 12 4l8.5 17"/><path d="M12 13l4.5 8"/><path d="M12 13 7.5 21"/><path d="M2 21h20"/></svg></span>campamento</li>
+      <li><a class="trail-link" href="#b4"><span class="dot">4</span>Registro<span class="t-min">≈6'</span></a></li>
+      <li><a class="trail-link" href="#b5"><span class="dot">5</span>Brújula<span class="t-min">≈2'</span></a></li>
+    </ol>
+  </nav>
+
+  <main class="content">
+    <div class="progress-trail"><div class="fill"></div></div>
+
+    <!-- 0 · COMANDO CENTRAL -->
+    <section class="bloque-card" id="b0">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h6"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Antes de la clase</span>
+          <h2>Comando Central</h2>
+          <p class="sub">Misma mecánica de lección que el tronco; cambia el catálogo — cada equipo trabaja SU rama.</p>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Objetivo del sprint</h3>
+        <div class="destacado">
+          <span class="label">En voz de resultado del alumno</span>
+          <p>Avanzarás tu rama elegida integrando datos en vivo al proyecto, demostrando cómo tu subsistema se conecta con el resto del ecosistema IoT.</p>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-9"/><path d="M9 8V5a3 3 0 1 1 6 0v3"/><path d="M12 13c-4 0-6-2.24-6-5h12c0 2.76-2 5-6 5Z"/><path d="M5 22h14"/></svg>Catálogo abierto en esta Expedición · Nivel 9</h3>
+        <p class="nota" style="margin-bottom:10px">Las Skill Cards que Xolo puede ofrecer hoy (cada equipo verá las suyas). Tu superpoder es conocerlas todas para patear ideas:</p>
+        <table class="tabla">
+          <thead><tr><th>Rama</th><th>Familia</th><th>Gancho</th><th>Qué logra</th></tr></thead>
+          <tbody>
+            <tr><td class="nombre">Sensores Ambientales</td><td>Sensado</td><td class="gancho">"Temperatura, humedad, luz y ruido: el mundo, medido con instrumentos serios."</td><td>Temperatura, humedad, luz y ruido con sensores profesionales (BME280).</td></tr>
+            <tr><td class="nombre">Dashboard en la Nube</td><td>Nube y Datos</td><td class="gancho">"Cien datos por hora no informan; un tablero bien diseñado sí."</td><td>Visualizar datos de sensores en tiempo real en un dashboard.</td></tr>
+            <tr><td class="nombre">Detector de Eventos</td><td>Sensado</td><td class="gancho">"Del monitoreo pasivo a la detección activa: el sistema que avisa."</td><td>Detectar presencia y anomalías (PIR, ultrasónico, polvo) y activar alertas.</td></tr>
+            <tr><td class="nombre">Control con Actuadores</td><td>Sensado</td><td class="gancho">"El sistema deja de observar y empieza a intervenir en el mundo."</td><td>Responder físicamente: micro-servos y bombas reaccionan a los datos.</td></tr>
+            <tr><td class="nombre">Identificación RFID</td><td>Sensado</td><td class="gancho">"Saber QUÉ pasó es la mitad; saber QUIÉN o QUÉ COSA, la otra."</td><td>Identificar objetos y personas con RFID para logística y control.</td></tr>
+            <tr><td class="nombre">Análisis de Tendencias</td><td>Nube y Datos</td><td class="gancho">"El dato dice qué pasa ahora; la serie dice hacia dónde va."</td><td>Patrones, tendencias y forecasting (conceptual) sobre datos en el tiempo.</td></tr>
+            <tr><td class="nombre">Esqueleto Web</td><td>Gemelo Digital</td><td class="gancho">"La estructura correcta hoy es la conexión fácil mañana."</td><td>Estructura HTML/CSS del gemelo digital de un sistema.</td></tr>
+            <tr><td class="nombre">Gemelo Vivo</td><td>Gemelo Digital</td><td class="gancho">"La página deja de ser documento y se convierte en ventana."</td><td>Conectar datos en vivo: el gemelo cambia dinámicamente con JS.</td></tr>
+            <tr><td class="nombre">Datos Sintéticos</td><td>Nube y Datos</td><td class="gancho">"Datos falsos pero realistas: la herramienta con doble filo de la era de la IA."</td><td>Generar datos 'falsos pero realistas' con el gemelo para entrenar otras IAs.</td></tr>
+            <tr><td class="nombre">Bucle Cerrado</td><td>Gemelo Digital</td><td class="gancho">"El gemelo deja de mirar: ahora también opera."</td><td>Desde el gemelo, accionar el sistema físico: cerrar el bucle humano-máquina.</td></tr>
+            <tr><td class="nombre">Sistema Multi-Dominio</td><td>Misión</td><td class="gancho">"Aire, ruido, presencia: dominios distintos, un solo sistema que los entiende juntos."</td><td>Monitorear varios dominios a la vez (aire, agua, ruido) en un solo sistema.</td></tr>
+            <tr><td class="nombre">Solución IoT de Impacto</td><td>Misión</td><td class="gancho">"Un sistema ciber-físico completo, ético por diseño, resolviendo un problema real."</td><td>Un sistema ciber-físico + gemelo digital completo que resuelve un problema ODS.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-9 4 18 3-9h6"/></svg>Flexómetro</h3>
+        <div class="flexo-grid">
+          <div class="flexo-card atrasado">
+            <h4>Vamos atrasados</h4>
+            <p>Equipo aún en setup del sensor o primeras lecturas sin integración. Mentor acelera: reduce validación de datos, salta a conexión ThingSpeak inmediata, captura pantalla del canal en vivo como evidencia.</p>
+            <p class="intocable"><strong>Intocable:</strong> Foto del canal ThingSpeak mostrando datos en tiempo real del sensor; URL del proyecto donde aparece ese canal embebido o referenciado.</p>
+          </div>
+          <div class="flexo-card entiempo">
+            <h4>En tiempo</h4>
+            <p>Equipo termina su rama: sensor calibrado, datos en ThingSpeak, lógica de su subsistema funcionando. Integración al proyecto documentada en el repositorio.</p>
+            <p class="intocable"><strong>Intocable:</strong> Commit en repositorio con código de la rama, screenshot del tablero ThingSpeak con datos vivos, y entrada en el documento de integración del proyecto listando qué rama entrega qué datos y a quién.</p>
+          </div>
+          <div class="flexo-card adelantado">
+            <h4>Vamos sobrados</h4>
+            <p>Equipo cierra su rama y comienza a tejer con otra: por ejemplo, Sensores Ambientales + Detector de Eventos, o Dashboard + Análisis de Tendencias. Mentor pide evidencia de la segunda rama iniciada.</p>
+            <p class="intocable"><strong>Intocable:</strong> Código de ambas ramas en repositorio, datos fluyendo entre ellas (sensor alimenta detector, o dashboard muestra tendencias), y diagrama o documento que mapee la integración entre ramas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></svg>Resolución rápida de problemas</h3>
+        <ul class="trouble">
+          <li><strong>No pueden entrar a Gnius Space:</strong> verifica internet primero. Si la plataforma no responde, usa la ruta de contingencia en xolo.gnius.club e informa a coordinación.</li>
+          <li><strong>El hardware no responde:</strong> cable y puerto primero; cambia el equipo físico si persiste — la lección de Xolo no se pierde, se retoma donde iba.</li>
+          <li><strong>Un error técnico que no reconoces:</strong> no lo resuelvas tú — pide al alumno contárselo a Xolo con las tres piezas: qué quiero, qué intenté, qué pasó.</li>
+        </ul>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Empezar la ruta →</button></div>
+    </section>
+
+    <!-- 1 · ENCENDIDO -->
+    <section class="bloque-card" id="b1">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 1 · Grupo completo</span>
+          <h2>Encendido</h2>
+          <p class="sub">El taller es de ellos: hoy cada equipo persigue su propia especialización.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 5 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="300">Iniciar</button></div>
+        </div>
+      </div>
+      <div class="seccion">
+        <h3>Consigna del día</h3>
+        <div class="destacado exp">
+          <span class="label">Dila en tus palabras</span>
+          <p>Hoy el equipo profundiza en la rama que eligió: no es solo entender la herramienta, es hacerla funcionar dentro del proyecto completo. Cada rama que terminen hoy es una pieza lista para integrar.</p>
+        </div>
+        <p class="nota" style="margin-top:10px">Tras liberar, cada alumno arranca con Xolo: saludo, Pathway y sus Skill Cards — verá su rama pre-elegida y también la opción "trabajar en mi proyecto" (Modo Proyecto: co-programación sobre el proyecto real, con el código siempre por el visor).</p>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Siguiente →</button></div>
+    </section>
+
+    <!-- 2 · DEMO -->
+    <section class="bloque-card" id="b2">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m10 8 4 2.5L10 13V8Z"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 2 · Demo de abanico</span>
+          <h2>Demo</h2>
+          <p class="sub">En taller no modelas UNA capacidad: abres el apetito del abanico completo.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 5 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="300">Iniciar</button></div>
+        </div>
+      </div>
+      <div class="seccion">
+        <h3>Tu demo</h3>
+        <div class="destacado">
+          <span class="label">Formato abanico — 30 segundos por rama</span>
+          <p>Mostramos cómo <em>"Temperatura, humedad, luz y ruido: el mundo, medido con instrumentos serios"</em> se convierte en <em>"Cien datos por hora no informan; un tablero bien diseñado sí"</em>, y cómo ese tablero dispara <em>"Del monitoreo pasivo a la detección activa: el sistema que avisa"</em>. Tres ramas, una cadena: sensor, visualización, reacción.</p>
+        </div>
+        <div class="error-proposito">
+          <span class="label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></svg>Error a propósito</span>
+          <p>El Mentor pide a Xolo: <strong>Que quiero:</strong> 'Dame código para leer el BME280'. <strong>Que intente sin contexto:</strong> Xolo devuelve un script genérico. <strong>Que paso:</strong> El código no sabe si va a un tablero, a un detector de eventos o a un actuador. Con contexto: 'Estamos en Sensores Ambientales, alimentando Dashboard en la Nube; dame el código que calibre para eso'.</p>
+        </div>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Siguiente →</button></div>
+    </section>
+
+    <!-- 3 · MANOS A LA OBRA -->
+    <section class="bloque-card" id="b3">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 3 · Cada equipo en su rama — tú como consultor itinerante</span>
+          <h2>Manos a la obra</h2>
+          <p class="sub">La lección de rama corre igual que una de tronco (misma tipología de turnos). Tu lectura de cancha es la misma; tu rol de patear ideas crece.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 22 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="1320">Iniciar</button></div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3>Roles durante el taller</h3>
+        <div class="roles-grid">
+          <div class="role-card maestro">
+            <h4><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Mentor de Cancha</h4>
+            <ul>
+              <li>Circula como consultor técnico entre ramas distintas; el catálogo es tu referencia para retar diseños.</li>
+              <li>Cruza ramas con proyectos: sugiere integraciones, no soluciones.</li>
+              <li>Redirige bugs a Xolo con contexto completo.</li>
+              <li>Gestiona hardware compartido por turnos.</li>
+            </ul>
+          </div>
+          <div class="role-card xolo">
+            <h4><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4M8 4h8"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/></svg>Xolo <span class="xolo-estado on">activo</span></h4>
+            <ul>
+              <li>Sirve la lección de la rama con la mecánica estándar.</li>
+              <li>En Modo Proyecto co-desarrolla sobre el build real — reta decisiones, no las toma.</li>
+              <li>La autoría queda registrada del equipo.</li>
+            </ul>
+          </div>
+          <div class="role-card alumno">
+            <h4><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Alumno</h4>
+            <ul>
+              <li>Avanza su rama y la integra al proyecto en la misma sesión.</li>
+              <li>Puede pedir "trabajar en mi proyecto" en cualquier momento.</li>
+              <li>Mantiene el estándar de pedidos con contexto.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="campamento">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 21 12 4l8.5 17"/><path d="M12 13l4.5 8"/><path d="M12 13 7.5 21"/><path d="M2 21h20"/></svg></div>
+        <div>
+          <h4>Punto de campamento <span class="tag">si aquí se acaba tu clase</span></h4>
+          <p>Si la rama queda a mitad: dejar el sensor leyendo datos en ThingSpeak sin interrupciones, y documentar en el repositorio exactamente qué paso falta (ej: 'Lógica de umbral para detector pendiente'). Esto permite retomar sin perder continuidad.</p>
+          <p class="retoma"><strong>Para retomar:</strong> Próxima sesión: verificar que el canal ThingSpeak siga acumulando datos, revisar el documento de estado, y continuar desde el paso documentado sin reconfigurar el sensor.</p>
+        </div>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Siguiente →</button></div>
+    </section>
+
+    <!-- 4 · REGISTRO -->
+    <section class="bloque-card" id="b4">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 4 · La evidencia alimenta memoria, evaluación y familias</span>
+          <h2>Registro</h2>
+          <p class="sub">En taller, la evidencia es de la rama de cada equipo — el sistema sabe cuál pedir.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 6 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="360">Iniciar</button></div>
+        </div>
+      </div>
+      <div class="seccion">
+        <h3>Cómo se ve el registro hoy</h3>
+        <p style="font-size:.92rem">Cada rama define su evidencia esperada (foto o video corto del sistema en operación, con el nombre del proyecto visible). El cierre de la lección persiste el avance en proyecto.md y alumno.md; Xolo lo confirma en una línea. Tu verificación de cancha: <strong>ningún equipo cierra sin evidencia capturada</strong> — de ahí salen la evaluación y el reporte a familias sin trabajo extra.</p>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Siguiente →</button></div>
+    </section>
+
+    <!-- 5 · BRÚJULA -->
+    <section class="bloque-card" id="b5">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 5 · Cierre de ciudadanía</span>
+          <h2>Brújula</h2>
+          <p class="sub">En taller, la Brújula celebra la diversidad de caminos.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 2 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="120">Iniciar</button></div>
+        </div>
+      </div>
+      <div class="seccion">
+        <h3>La pregunta de hoy</h3>
+        <div class="destacado exp">
+          <span class="label">Levántala a discusión grupal</span>
+          <p>"Hoy cada equipo tomó un camino técnico distinto y todos avanzaron. ¿Qué viste en la solución de otro equipo que tú no habrías intentado?"</p>
+        </div>
+        <p class="nota" style="margin-top:10px">Si algún equipo cerró en T5, su pantalla ya muestra la Brújula de su rama — puedes usarla como detonador en lugar de la genérica.</p>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next" disabled>Fin de la ruta</button></div>
+    </section>
+
+  </main>
+</div>
+<script src="../assets/script.js"></script>
+</body>
+</html>
