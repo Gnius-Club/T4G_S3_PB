@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PB-N9-E1S4 · Gemelo Digital · Playbook Tronco</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-tipo="tronco" data-expedicion="1" data-etapa="secundaria">
+
+<header class="app-header">
+  <div class="bar">
+    <div class="brand">
+      <div class="chips">
+        <span class="chip exp">Expedición 1</span>
+        <span class="chip">Sprint 4</span>
+        <span class="chip tipo">Tronco</span>
+      </div>
+      <h1>Gemelo Digital</h1>
+      <p class="gancho">Lo físico sucede en el salón; su reflejo vive en una URL.</p>
+      <span class="sprint-id">PB-N9-E1S4 · Nivel 9 · 3º de Secundaria · HTML/CSS/JS + Editor web</span>
+    </div>
+    <div class="header-toggles">
+      <div class="timer-global">
+        <span id="global-timer" data-duracion="2400">40:00</span>
+        <button id="global-start-stop">Iniciar</button>
+        <button id="global-reset">Reiniciar</button>
+      </div>
+      <div class="toggle">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Reloj</span>
+        <label class="switch"><input type="checkbox" id="toggle-reloj"><span class="slider"></span></label>
+      </div>
+      <div class="toggle">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <label class="switch"><input type="checkbox" id="toggle-theme"><span class="slider"></span></label>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="main-shell">
+
+  <!-- ==================== LA RUTA ==================== -->
+  <nav class="trail" aria-label="Ruta del sprint">
+    <h2>La ruta</h2>
+    <ol>
+      <li><a class="trail-link" href="#b0"><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h6"/></svg></span>Comando Central</a></li>
+      <li><a class="trail-link" href="#b1"><span class="dot">1</span>Encendido<span class="t-min">≈5'</span></a></li>
+      <li><a class="trail-link" href="#b2"><span class="dot">2</span>Demo<span class="t-min">≈5'</span></a></li>
+      <li class="trail-camp"><span class="dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 21 12 4l8.5 17"/><path d="M12 13l4.5 8"/><path d="M12 13 7.5 21"/><path d="M2 21h20"/></svg></span>campamento</li>
+      <li><a class="trail-link" href="#b3"><span class="dot">3</span>Manos a la obra<span class="t-min">≈22'</span></a></li>
+      <li class="trail-camp"><span class="dot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 21 12 4l8.5 17"/><path d="M12 13l4.5 8"/><path d="M12 13 7.5 21"/><path d="M2 21h20"/></svg></span>campamento</li>
+      <li><a class="trail-link" href="#b4"><span class="dot">4</span>Registro<span class="t-min">≈6'</span></a></li>
+      <li><a class="trail-link" href="#b5"><span class="dot">5</span>Brújula<span class="t-min">≈2'</span></a></li>
+    </ol>
+  </nav>
+
+  <!-- ==================== CONTENIDO ==================== -->
+  <main class="content">
+    <div class="progress-trail"><div class="fill"></div></div>
+
+    <!-- ========== 0 · COMANDO CENTRAL ========== -->
+    <section class="bloque-card" id="b0">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h6"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Antes de la clase</span>
+          <h2>Comando Central</h2>
+          <p class="sub">Todo lo que necesitas para preparar y conducir este sprint — dure una sesión o dos.</p>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Objetivo del sprint</h3>
+        <div class="destacado">
+          <span class="label">En voz de resultado del alumno</span>
+          <p>Construirás una página web que muestra datos del sistema en tiempo real, separando HTML, CSS y JavaScript en tres archivos con responsabilidades claras.</p>
+        </div>
+        <p class="nota" style="margin-top:10px">Capacidades del sprint: <strong>N9-T3 · Gemelo Digital</strong> — capacidad de tronco de esta Expedición.</p>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>Esenciales</h3>
+        <div class="roles-grid">
+          <div class="role-card">
+            <h4>Concepto clave</h4>
+            <p style="font-size:.88rem">El gemelo digital es el monitor de signos vitales del hospital: el paciente está en la cama, pero la enfermera ve su estado desde la central — ritmo, presión, alarmas. Nadie decora ese monitor: cada pixel existe para leerse en dos segundos, y si el sensor se desconecta, el monitor lo grita en vez de congelar el último número bonito.</p>
+          </div>
+          <div class="role-card">
+            <h4>Habilidad técnica</h4>
+            <p style="font-size:.88rem">Construir una página web sencilla que muestra los datos del sistema: el reflejo digital de lo físico.</p>
+          </div>
+          <div class="role-card">
+            <h4>Sprint extensible</h4>
+            <p style="font-size:.88rem">Este Playbook cubre el sprint completo, no una sesión. Si el grupo necesita dos clases, los <strong>campamentos</strong> de la ruta marcan dónde pausar y cómo retomar.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Checklist de materiales</h3>
+        <div class="check-list">
+          <label><input type="checkbox"> Internet estable + acceso a Gnius Space verificado</label>
+          <label><input type="checkbox"> Hardware por equipo listo: HTML/CSS/JS + Editor web</label>
+          <label><input type="checkbox"> Proyector para la demo</label>
+          <label><input type="checkbox"> Xolo activo — prueba tu propio acceso 5 minutos antes</label>
+        </div>
+        <p class="nota" style="margin-top:12px"><strong>Cuidado del equipo:</strong> manos secas al manejar las placas, cables sin jalones y los aparatos regresan a su lugar al cierre.</p>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-9 4 18 3-9h6"/></svg>Flexómetro — tiempo fijo, alcance variable</h3>
+        <p class="nota" style="margin-bottom:12px">El sprint y la fecha de corte no se mueven; la profundidad sí. Elige tu escenario y ajusta sin culpa.</p>
+        <div class="flexo-grid">
+          <div class="flexo-card atrasado">
+            <h4>Vamos atrasados</h4>
+            <p>Reducir a un solo dato en el gemelo en lugar de múltiples elementos. Saltarse la justificación elemento por elemento si el tiempo apremia.</p>
+            <p class="intocable"><strong>Intocable:</strong> La separación de los tres archivos y la marca de tiempo obligatoria no se negocian.</p>
+          </div>
+          <div class="flexo-card entiempo">
+            <h4>En tiempo</h4>
+            <p>El grupo completa el gemelo estático con sus tres archivos separados y entrega la justificación de por qué cada elemento está donde está.</p>
+            <p class="intocable"><strong>Intocable:</strong> Cada alumno debe explicar el contrato de frescura: por qué la marca de tiempo es obligatoria.</p>
+          </div>
+          <div class="flexo-card adelantado">
+            <h4>Vamos sobrados</h4>
+            <p>Conectar datos reales del sistema al gemelo o diseñar un segundo gemelo que muestre el mismo sistema desde otra perspectiva de usuario. Explorar cómo el diseño de la pantalla cambia la percepción de estabilidad o crisis.</p>
+            <p class="intocable"><strong>Intocable:</strong> La responsabilidad ética de quien diseña la pantalla que otros leen debe quedar explícita.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></svg>Resolución rápida de problemas</h3>
+        <ul class="trouble">
+          <li><strong>No pueden entrar a Gnius Space:</strong> verifica internet primero. Si la plataforma no responde, usa la ruta de contingencia en xolo.gnius.club e informa a coordinación.</li>
+          <li><strong>El hardware no responde:</strong> cable y puerto primero; cambia el equipo físico si persiste — la lección de Xolo no se pierde, se retoma donde iba.</li>
+          <li><strong>Un error técnico que no reconoces:</strong> no lo resuelvas tú — pide al alumno contárselo a Xolo con las tres piezas: qué quiero, qué intenté, qué pasó.</li>
+        </ul>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Empezar la ruta →</button></div>
+    </section>
+
+    <!-- ========== 1 · ENCENDIDO ========== -->
+    <section class="bloque-card" id="b1">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 1 · Grupo completo</span>
+          <h2>Encendido</h2>
+          <p class="sub">Abres la clase, das la consigna y liberas: el re-enganche individual es de Xolo.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 5 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="300">Iniciar</button></div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3>Consigna del día</h3>
+        <div class="destacado exp">
+          <span class="label">Dila en tus palabras, con energía</span>
+          <p>Hoy construimos el gemelo digital de un sistema físico: una página que refleja lo que sucede aquí y ahora. Como el monitor de signos vitales en un hospital, cada elemento existe para leerse en dos segundos y gritar si algo falla.</p>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3>Qué haces tú, qué hace el sistema</h3>
+        <div class="roles-grid">
+          <div class="role-card maestro">
+            <h4><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Mentor de Cancha</h4>
+            <ul>
+              <li>Abre con la consigna del día, directo y sin rodeos.</li>
+              <li>Pide login en Gnius Space.</li>
+              <li>Recuerda al grupo que el arranque con Xolo es autónomo: él ya trae el estado del proyecto.</li>
+              <li>Libera y pasa a modo monitoreo.</li>
+            </ul>
+          </div>
+          <div class="role-card xolo">
+            <h4><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4M8 4h8"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/></svg>Xolo <span class="xolo-estado on">activo</span></h4>
+            <ul>
+              <li>Saluda por alias y retoma el proyecto desde la última línea de memoria.</li>
+              <li>Anuncia lección de la sesión y confirma Pathway.</li>
+              <li>Despliega las Skill Cards disponibles.</li>
+            </ul>
+          </div>
+          <div class="role-card alumno">
+            <h4><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Alumno</h4>
+            <ul>
+              <li>Entra a Gnius Space y saluda a Xolo.</li>
+              <li>Confirma o cambia su Pathway.</li>
+              <li>Selecciona la Skill Card de hoy: <strong>Gemelo Digital</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Siguiente →</button></div>
+    </section>
+
+    <!-- ========== 2 · DEMO ========== -->
+    <section class="bloque-card" id="b2">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m10 8 4 2.5L10 13V8Z"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 2 · Tú modelas en vivo</span>
+          <h2>Demo</h2>
+          <p class="sub">Muestras qué es posible hoy — con un error a propósito que el grupo debe cachar.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 5 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="300">Iniciar</button></div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3>Tu demo</h3>
+        <div class="destacado">
+          <span class="label">Guion de la demo · del catálogo del nivel</span>
+          <p>El profe construye el esqueleto del gemelo en vivo separando los tres archivos y narrando qué responsabilidad tiene cada uno.</p>
+        </div>
+        <div class="error-proposito">
+          <span class="label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></svg>Error a propósito</span>
+          <p>Fallo intencional: presenta un gemelo sin marca de tiempo mostrando un dato de ayer como si fuera actual — el grupo detecta la mentira de frescura.</p>
+        </div>
+      </div>
+
+      <div class="campamento">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 21 12 4l8.5 17"/><path d="M12 13l4.5 8"/><path d="M12 13 7.5 21"/><path d="M2 21h20"/></svg></div>
+        <div>
+          <h4>Punto de campamento <span class="tag">si aquí se acaba tu clase</span></h4>
+          <p>Dejar el esqueleto del gemelo funcionando en pantalla con el error de frescura detectado. El grupo debe anotar las tres responsabilidades de cada archivo antes de cerrar.</p>
+          <p class="retoma"><strong>Para retomar:</strong> Retoma mostrando el gemelo con error y pregunta: ¿qué pasó? ¿por qué el grupo lo vio como mentira?</p>
+        </div>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Siguiente →</button></div>
+    </section>
+
+    <!-- ========== 3 · MANOS A LA OBRA ========== -->
+    <section class="bloque-card" id="b3">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 3 · El núcleo — cada quien con Xolo, luego al aparato</span>
+          <h2>Manos a la obra</h2>
+          <p class="sub">Xolo conduce la lección individual; tú circulas, lees las pantallas y nunca resuelves.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 22 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="1320">Iniciar</button></div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3>Roles durante el núcleo</h3>
+        <div class="roles-grid">
+          <div class="role-card maestro">
+            <h4><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Mentor de Cancha</h4>
+            <ul>
+              <li>Monitorea pantallas: la tabla de abajo mapea el estado de cada equipo sin interrumpir.</li>
+              <li>Normaliza preguntar: las dudas pausan la lección, no la rompen.</li>
+              <li>No des soluciones: devuelve el error como pregunta o redirígelo a Xolo con contexto.</li>
+              <li>Libera hardware conforme los equipos llegan a integración física.</li>
+            </ul>
+          </div>
+          <div class="role-card xolo">
+            <h4><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4M8 4h8"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/></svg>Xolo <span class="xolo-estado on">activo</span></h4>
+            <ul>
+              <li>Conduce la lección desde el contenido curado — sin improvisar contenido técnico.</li>
+              <li>Ancla el concepto con la analogía del catálogo.</li>
+              <li>Responde a errores con reencauce socrático, no con el fix.</li>
+              <li>El código viaja por el visor, no por el chat.</li>
+            </ul>
+          </div>
+          <div class="role-card alumno">
+            <h4><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Alumno</h4>
+            <ul>
+              <li>Itera con Xolo: explicación, práctica en widget, feedback.</li>
+              <li>Escribe sus dudas con sus palabras cuando lo necesita.</li>
+              <li>Integra lo aprendido a su build y lo prueba en hardware.</li>
+              <li>Estructura sus pedidos: qué quiero, qué intenté, qué obtuve.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Qué verás en las pantallas</h3>
+        <p class="nota" style="margin-bottom:10px">La lección de Xolo avanza en cinco tipos de turno. Con un vistazo a la pantalla sabes exactamente dónde va cada equipo — sin interrumpir a nadie.</p>
+        <table class="pantallas-tabla">
+          <thead><tr><th>Si ves…</th><th>El equipo va en…</th><th>Tu lectura de cancha</th></tr></thead>
+          <tbody>
+            <tr><td class="t-id">Botones bajo el mensaje</td><td>T1 · Paso de secuencia</td><td>Xolo explicó y preguntó. Flujo normal.</td></tr>
+            <tr><td class="t-id">Widget interactivo</td><td>T2 · Práctica</td><td>Resolviendo una actividad. No interrumpas el ciclo de trabajo.</td></tr>
+            <tr><td class="t-id">Botón [Continuar]</td><td>T3 · Feedback</td><td>Retro recibida. Ventana buena para revisión rápida.</td></tr>
+            <tr><td class="t-id">Pregunta abierta, sin botones</td><td>T4 · Verificación</td><td>Están demostrando comprensión con sus palabras. Si varios equipos coinciden, vale una pausa grupal.</td></tr>
+            <tr><td class="t-id">Confirmación de memoria + pregunta reflexiva</td><td>T5 · Cierre</td><td>Logro persistido en proyecto.md. La pregunta visible es la Brújula.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="seccion">
+        <h3>Reencauces que ya trae Xolo (tu referencia de cancha)</h3>
+        <ul class="trouble">
+          <li><strong>Mi página se ve bien pero mezclé todo en un archivo:</strong> Funciona hoy y se vuelve impagable mañana: separa estructura (HTML), presentación (CSS) y comportamiento (JS). La división no es burocracia — es lo que permite que R8 conecte datos sin romper el diseño.</li>
+          <li><strong>No sé qué poner en la página:</strong> Pregunta al usuario del gemelo: ¿qué decide con esta pantalla? Todo lo que no ayuda a esa decisión es ruido. Los tableros se diseñan desde las preguntas, no desde los datos disponibles.</li>
+          <li><strong>¿Y si el dato es de hace una hora?:</strong> El gemelo lo declara: la marca de tiempo de la última actualización es obligatoria. La frescura aparente es la mentira más común de los tableros.</li>
+        </ul>
+        <p class="nota">Si un alumno te trae el error a ti, devuélvelo con la misma pregunta — o mejor: "cuéntale eso a Xolo tal como me lo contaste".</p>
+      </div>
+
+      <div class="campamento">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 21 12 4l8.5 17"/><path d="M12 13l4.5 8"/><path d="M12 13 7.5 21"/><path d="M2 21h20"/></svg></div>
+        <div>
+          <h4>Punto de campamento <span class="tag">si aquí se acaba tu clase</span></h4>
+          <p>Guardar el estado exacto del código en los tres archivos y la lista de elementos que cada equipo decidió mostrar en su gemelo.</p>
+          <p class="retoma"><strong>Para retomar:</strong> Xolo carga el punto exacto del código y el grupo continúa desde el siguiente elemento o justificación pendiente.</p>
+        </div>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Siguiente →</button></div>
+    </section>
+
+    <!-- ========== 4 · REGISTRO ========== -->
+    <section class="bloque-card" id="b4">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 4 · La evidencia alimenta memoria, evaluación y familias</span>
+          <h2>Registro</h2>
+          <p class="sub">Sin evidencia no hay memoria, no hay reporte y no hay ficha presumible.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 6 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="360">Iniciar</button></div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3>Evidencia de este sprint</h3>
+        <div class="destacado">
+          <span class="label">Del catálogo del nivel — pídela tal cual</span>
+          <p>El gemelo estático con sus tres archivos separados + la justificación elemento por elemento.</p>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3>Qué queda escrito en la memoria</h3>
+        <p style="font-size:.92rem">En proyecto.md quedará registrado que el equipo construyó un gemelo digital con estructura de X elementos, separados en HTML, CSS y JavaScript, con marca de tiempo activa. En alumno.md se anotará que el estudiante domina la separación de responsabilidades en T3 de este nivel.</p>
+      </div>
+
+      <div class="seccion">
+        <h3>La verificación que hace Xolo (por si quieres levantarla al grupo)</h3>
+        <div class="prompt-box">
+          <button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copiar</button>
+          <pre>Recorre tu gemelo y justifica cada elemento: ¿qué pregunta del usuario responde? ¿Dónde declara la frescura del dato? ¿Qué responsabilidad tiene cada uno de tus tres archivos?</pre>
+        </div>
+        <p class="nota" style="margin-top:8px">La respuesta de cada alumno se evalúa contra los retos del nivel: <strong>Newbie</strong> — Armo una página que muestra un dato. · <strong>Guru</strong> — Conecto los datos del sistema a la página. · <strong>Wizard</strong> — Diseño un gemelo claro y útil.</p>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next">Siguiente →</button></div>
+    </section>
+
+    <!-- ========== 5 · BRÚJULA ========== -->
+    <section class="bloque-card" id="b5">
+      <div class="bloque-head">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></div>
+        <div class="titles">
+          <span class="eyebrow">Bloque 5 · Cierre de ciudadanía — 2 minutos que valen la clase</span>
+          <h2>Brújula</h2>
+          <p class="sub">La pregunta reflexiva conecta la capacidad de hoy con el mundo real del alumno.</p>
+        </div>
+        <div class="bloque-timing">
+          <span class="min-chip">≈ 2 min</span>
+          <div class="timer-controls"><span class="timer-display"></span><button class="timer-start-btn" data-duracion="120">Iniciar</button></div>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <h3>La pregunta de hoy</h3>
+        <div class="destacado exp">
+          <span class="label">Del catálogo del nivel — levántala a discusión grupal</span>
+          <p>"Los tableros deciden percepciones: el mismo sistema puede verse 'estable' o 'en crisis' según qué muestre su gemelo. Quien diseña la pantalla diseña la realidad percibida — ¿qué responsabilidad trae eso?"</p>
+        </div>
+      </div>
+
+      <div class="seccion">
+        <button class="collapsible-button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>Guion de 2 minutos (opcional)</button>
+        <div class="collapsible-content">
+          <p>Los tableros deciden percepciones: el mismo sistema puede verse estable o en crisis según qué muestre su gemelo. Pidan al grupo que observe dos versiones del mismo dato — una con marca de tiempo clara, otra sin ella — y describan qué sienten al verlas. ¿Cuál inspira confianza? ¿Cuál genera duda?</p>
+          <p>Cierren con esta pregunta: quien diseña la pantalla que otros leen, ¿diseña también la realidad que perciben? Pídanles que piensen en sus gemelos: ¿qué responsabilidad traen las decisiones de qué mostrar, dónde y cuándo actualizar?</p>
+        </div>
+      </div>
+      <div class="bloque-nav"><button class="prev">← Anterior</button><button class="next" disabled>Fin de la ruta</button></div>
+    </section>
+
+  </main>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>
